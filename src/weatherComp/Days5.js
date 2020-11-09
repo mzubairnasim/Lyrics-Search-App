@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-const key='270afbc518467f7d9f0d40df7450164c'
+// const key='270afbc518467f7d9f0d40df7450164c'
 export default function Days5(props) {
     const ans=props.match.params.id
     const [loading, setloading] = useState(false)
@@ -9,7 +9,7 @@ export default function Days5(props) {
 
   useEffect(async() => {
     setloading(true)
-   const res=await fetch(`https://api.openweathermap.org/data/2.5/forecast?id=${ans}&appid=${key}`)
+   const res=await fetch(`https://api.openweathermap.org/data/2.5/forecast?id=${ans}&appid=270afbc518467f7d9f0d40df7450164c}`)
    const data=await res.json()
    console.log(data)
    setdata(data.list)

@@ -2,7 +2,7 @@ import React,{createContext,useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 export default function WeatherMain() {
-  const key='270afbc518467f7d9f0d40df7450164c'
+  // const key='270afbc518467f7d9f0d40df7450164c'
  
 
   const [loading, setloading] = useState(false)
@@ -15,7 +15,7 @@ export default function WeatherMain() {
   const [input, setinput] = useState("")
   const [name, setname] = useState("karachi")
 
-  const api=`http://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${key}`
+  const api=`http://api.openweathermap.org/data/2.5/weather?q=${name}&appid=270afbc518467f7d9f0d40df7450164c`
  
   const getweather=()=>{
       setname(input)
