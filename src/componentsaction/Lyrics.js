@@ -18,8 +18,8 @@ export default function Lyrics(props) {
     }, [])
 
     return (
-        <div>
-                {loading?<h1>loading...</h1>: <p>{lyrics.lyrics_body===""?"sorry":lyrics.lyrics_body}</p>}
+        <div className='card card-body cardone' style={{width:550,background:"white",marginLeft:400}}>
+                {loading?<h1>loading...</h1>: <p>{lyrics.lyrics_body===""?"Sorry Try Again ":lyrics.lyrics_body}</p>}
                 <Link to='/'>Back</Link>
            
         </div>

@@ -1,1 +1,9 @@
-.one{display: flex;flex-wrap: wrap;}
+
+.one{margin-left: 340px;text-transform: capitalize;}
+.cardone{box-shadow: 0 4px 8px gainsboro;margin: 20px;}
+.main{margin-left: 300px;}
+.bg{background-image: url(https://cdn.pixabay.com/photo/2014/05/21/15/18/musician-349790__340.jpg);
+height: 200vh;width: 100%;
+background-size: cover;background-repeat: no-repeat;
+opacity: 0.9;
+}

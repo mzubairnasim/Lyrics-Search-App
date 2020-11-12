@@ -19,9 +19,20 @@ export default function Search() {
     }
 
     return (
-        <div>
-           <input type='text' value={userInput} onChange={e=>setUserInput(e.target.value)}/>
-            <button onClick={search}>Search</button>    
+        <div className='container'>
+        <div className='row'>
+        <div className='col-lg-10 offfset-2 m-auto'>
+
+            <div class="form-group mt-3">
+            <label>Song Name</label>
+            <input class="form-control" type='text' value={userInput} onChange={e=>setUserInput(e.target.value)}/><br/>
+            </div>
+            <button onClick={search} class="btn btn-primary">Search</button>
+
+            </div>
+        </div>
+     
+          
         </div>
     )
 }
